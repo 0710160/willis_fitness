@@ -1,7 +1,31 @@
 :root {
-  --theme-color: #34b7a7;
+  --theme-bg: #20252B;
+  --theme-primary: #FBF51F;
+  --theme-secondary: #FF1DE2;
 }
 
+/*-----------------------------------------------------------------------------
+NAVBAR
+-----------------------------------------------------------------------------*/
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.navbar-dark {
+  --bs-bg-opacity: 0.6;
+}
+
+.navbar-brand {
+  color: var(--theme-primary) !important;
+  font-size: 150%;
+}
+
+/*-----------------------------------------------------------------------------
+HERO SECTION
+-----------------------------------------------------------------------------*/
 .big-bg {
   width: 100%;
   height: 100vh;
@@ -9,6 +33,26 @@
   background-size: cover;
 }
 
+.inspirational-quote {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  z-index: 1;
+  text-align: right;
+}
+
+.inspirational-quote h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 1.4;
+  color: var(--theme-primary);
+  text-shadow: 2px 2px 5px var(--theme-bg);
+}
+
+/*-----------------------------------------------------------------------------
+ANIMATED DOWN ARROW
+-----------------------------------------------------------------------------*/
 .go-down a {
   position: absolute;
   bottom: 20px;
@@ -37,7 +81,7 @@
   width: 46px;
   height: 46px;
   margin-left: -23px;
-  border: 2px solid var(--theme-color);
+  border: 2px solid var(--theme-primary);
   border-radius: 100%;
   box-sizing: border-box;
 }
@@ -49,33 +93,39 @@
   width: 16px;
   height: 16px;
   margin: -12px 0 0 -8px;
-  border-left: 1px solid var(--theme-color);
-  border-bottom: 1px solid var(--theme-color);
+  border-left: 1px solid var(--theme-primary);
+  border-bottom: 1px solid var(--theme-primary);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
 
-/*------------------------------------------
-Navbar
-------------------------------------------*/
-.navbar-brand {
-  color: var(--theme-color) !important;
-  font-size: 150%;
-}
-
-/*------------------------------------------
-PT Cartel, Trayn and MyTrayner section
-------------------------------------------*/
-.btn-lg {
-  background-color: var(--theme-color);
+/*-----------------------------------------------------------------------------
+TRAYN, ETC
+-----------------------------------------------------------------------------*/
+#pages {
   color: #fff;
+  background-color: var(--theme-bg);
+}
+
+#pages h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.btn-lg {
+  background-color: var(--theme-primary);
+  color: var(--theme-bg);
 }
 
 
-/*------------------------------------------
-Footer
-------------------------------------------*/
+/*-----------------------------------------------------------------------------
+FOOTER
+-----------------------------------------------------------------------------*/
 footer {
   padding: 0 30px;
+}
+
+footer p {
+  font-size: 0.8em;
 }

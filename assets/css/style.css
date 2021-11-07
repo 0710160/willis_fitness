@@ -1,7 +1,7 @@
 :root {
   --theme-bg: #20252B;
   --theme-primary: #FBF51F;
-  --theme-secondary: #FF1DE2;
+  --theme-secondary: #F663FAFF;
 }
 
 /*-----------------------------------------------------------------------------
@@ -19,8 +19,13 @@ NAVBAR
 }
 
 .navbar-brand {
-  color: var(--theme-primary) !important;
-  font-size: 150%;
+  color: var(--theme-secondary) !important;
+  font-size: 1.5em;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
 }
 
 /*-----------------------------------------------------------------------------
@@ -47,7 +52,7 @@ HERO SECTION
   font-size: 2.5em;
   line-height: 1.4;
   color: var(--theme-primary);
-  text-shadow: 2px 2px 5px var(--theme-bg);
+  text-shadow: 2px 2px 10px var(--theme-bg);
 }
 
 /*-----------------------------------------------------------------------------
@@ -114,7 +119,7 @@ TRAYN, ETC
 }
 
 .btn-lg {
-  background-color: var(--theme-primary);
+  background-color: var(--theme-secondary);
   color: var(--theme-bg);
 }
 
@@ -137,6 +142,13 @@ MEDIA QUERIES FOR DESKTOP
   .inspirational-quote h1 {
     font-size: 4em;
     }
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+  .navbar-brand {
+    font-size: 2em;
+    font-weight: 500;
 }
 
 /*-----------------------------------------------------------------------------

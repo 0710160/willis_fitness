@@ -19,7 +19,7 @@ NAVBAR
 }
 
 .navbar-brand {
-  color: var(--theme-secondary) !important;
+  color: var(--theme-primary) !important;
   font-size: 1.5em;
 }
 
